@@ -1,0 +1,110 @@
+<!-- Struktur Dasar HTML - Pengenalan Web
+   File: struktur-dasar-html.html
+   Deskripsi: Penjelasan singkat tentang WWW, mekanisme kerja, dan contoh struktur dasar HTML.
+-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Struktur Dasar HTML - Pengenalan Web</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+      line-height: 1.6;
+      background: #f3f6f9;
+      color: #0f172a;
+      padding: 2rem;
+    }
+    .card {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 1.25rem 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+    }
+    h1 { font-size: 1.2rem; margin-bottom: 0.25rem; }
+    h2 { font-size: 1rem; margin-top: 1rem; }
+    pre {
+      background: #0b1220;
+      color: #e6eef8;
+      padding: 0.75rem;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Courier New', monospace;
+      font-size: 0.9rem;
+    }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace; }
+    p.lead { color: #475569; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Struktur Dasar HTML — Pengenalan Web</h1>
+    <p class="lead">Penjelasan singkat mengenai WWW, mekanisme kerja, dan contoh struktur dasar dokumen HTML.</p>
+
+    <h2>1. Apa itu WWW (World Wide Web)?</h2>
+    <p>WWW (World Wide Web) adalah kumpulan situs di seluruh dunia yang memberikan layanan kepada pengguna untuk mengakses berbagai informasi melalui halaman web.</p>
+
+    <h2>2. Mekanisme Kerja World Wide Web</h2>
+    <p>Secara garis besar:</p>
+    <ol>
+      <li>Client (mis. browser) membuka URL atau alamat halaman.</li>
+      <li>Browser mengirimkan permintaan (HTTP Request) ke server web.</li>
+      <li>Server memproses permintaan dan mengirimkan balasan (HTTP Response) berisi HTML/CSS/JS atau resource lain.</li>
+      <li>Browser menerima respon dan merender (menampilkan) halaman kepada pengguna.</li>
+    </ol>
+
+    <h2>Contoh Alur Sederhana</h2>
+    <pre><code>1. Client membuka browser.
+2. Browser mengirimkan permintaan ke server melalui protokol HTTP.
+3. Server memproses permintaan dan mengirimkan halaman HTML kembali ke browser.
+4. Browser menampilkan halaman tersebut kepada pengguna.</code></pre>
+
+    <h2>3. Struktur Dasar HTML</h2>
+    <p>Contoh struktur HTML paling sederhana:</p>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Judul Halaman&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    Konten Halaman Web
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    <h2>4. Contoh Lengkap (Dengan Meta dan Bahasa)</h2>
+    <p>Gunakan template ini sebagai titik awal untuk membuat halaman web:</p>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;title&gt;Contoh Halaman Web&lt;/title&gt;
+  &lt;!-- Tambahkan link CSS atau script JS di sini --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Selamat datang di situs saya&lt;/h1&gt;
+  &lt;/header&gt;
+  &lt;main&gt;
+    &lt;p&gt;Ini adalah contoh paragraf pada halaman web.&lt;/p&gt;
+  &lt;/main&gt;
+  &lt;footer&gt;
+    &lt;small&gt;&amp;copy; 2025 — Contoh Situs&lt;/small&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    <h2>5. Tips Singkat</h2>
+    <ul>
+      <li>Selalu sertakan <code>&lt;meta charset="utf-8"&gt;</code> untuk menghindari masalah encoding.</li>
+      <li>Gunakan <code>lang</code> di tag <code>&lt;html&gt;</code> untuk aksesibilitas dan SEO.</li>
+      <li>Gunakan <code>&lt;meta name="viewport"&gt;</code> agar halaman responsive pada perangkat mobile.</li>
+    </ul>
+
+    <p style="margin-top:0.75rem; color:#475569">Salin file ini sebagai <code>struktur-dasar-html.html</code> dan buka di browser untuk melihat contoh. Anda ingin saya buatkan juga versi latihan interaktif atau kuis singkat? 😊</p>
+  </div>
+</body>
+</html>

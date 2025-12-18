@@ -1,0 +1,150 @@
+<!-- Latihan Bullet Numbering dan List
+   File: latihan-bullet-list.html
+   Deskripsi: Menampilkan daftar komponen sistem komputer menggunakan ordered dan unordered lists
+-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Latihan Bullet Numbering dan List - Komponen Sistem Komputer</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      line-height: 1.6;
+      padding: 2rem;
+      background: #f7f9fb;
+      color: #111827;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+    p.lead { color: #6b7280; margin-bottom: 1rem; }
+
+    /* Styling daftar bertingkat */
+    ol.main-list {
+      counter-reset: item; /* custom numbering if ingin */
+      margin-left: 1rem;
+    }
+
+    ol.main-list > li {
+      margin: 0.6rem 0;
+    }
+
+    /* membuat sub-list tampil rapi */
+    ul.sub-list, ol.sub-list {
+      margin: 0.4rem 0 0.4rem 1.25rem;
+    }
+
+    /* contoh kecil: menambahkan ikon sebelum judul komponen */
+    .component-title {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    /* responsive */
+    @media (max-width: 560px) {
+      body { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Latihan: Bullet Numbering dan List</h1>
+    <p class="lead">Daftar komponen yang membangun sistem komputer (contoh menggunakan <code>&lt;ol&gt;</code> dan <code>&lt;ul&gt;</code>).</p>
+
+    <!-- Daftar utama: menggunakan ordered list -->
+    <ol class="main-list">
+      <li>
+        <div class="component-title">Hardware</div>
+        <!-- Sub-list: per kategori input, output, process -->
+        <ol class="sub-list">
+          <li>
+            <strong>Input Device</strong>
+            <ul class="sub-list">
+              <li>Mouse</li>
+              <li>Keyboard</li>
+              <li>Joystick</li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Output Device</strong>
+            <ul class="sub-list">
+              <li>Monitor</li>
+              <li>Printer</li>
+              <li>Speaker</li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Process</strong>
+            <ul class="sub-list">
+              <li>Central Processing Unit</li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+
+      <li>
+        <div class="component-title">Software</div>
+        <ol class="sub-list">
+          <li>
+            <strong>Operating System</strong>
+            <ul class="sub-list">
+              <li>Windows</li>
+              <li>Unix</li>
+              <li>Linux</li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Programming Language</strong>
+            <ul class="sub-list">
+              <li>Delphi</li>
+              <li>Cobol</li>
+              <li>RPG</li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Utility Program</strong>
+            <p class="lead">(Contoh: program bantu untuk maintenance, backup, antivirus, dsb.)</p>
+          </li>
+        </ol>
+      </li>
+    </ol>
+
+    <!-- Contoh alternatif: daftar tidak bernomor -->
+    <hr>
+    <h2>Contoh menggunakan unordered list</h2>
+    <ul>
+      <li>Hardware
+        <ul>
+          <li>Input Device: Mouse, Keyboard, Joystick</li>
+          <li>Output Device: Monitor, Printer, Speaker</li>
+          <li>Process: Central Processing Unit</li>
+        </ul>
+      </li>
+      <li>Software
+        <ul>
+          <li>Operating System: Windows, Unix, Linux</li>
+          <li>Programming Language: Delphi, Cobol, RPG</li>
+          <li>Utility Program</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Catatan singkat -->
+    <p style="margin-top:1rem; color:#6b7280; font-size:0.95rem">Catatan: Salin file ini dan buka di browser untuk melihat tampilan. Anda bisa memodifikasi styling atau mengganti daftar menjadi ikon atau tabel sesuai kebutuhan.</p>
+  </div>
+</body>
+</html>
